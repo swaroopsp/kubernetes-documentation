@@ -11,4 +11,4 @@
 - `kubectl describe configmap config-example` - To see the config map
 - `kubectl logs config-example-6bf8c6c45-ffbb8 -f` - To see the logs
 - `kubectl apply -f config.yaml` - To apply the new config
-- `curl http://localhost:8080/actuator/refresh -d {} -H "Content-Type: application/json"` - To apply the configs
+- `kubectl delete daemonsets,replicasets,services,deployments,pods,rc,ingress --all --all-namespaces` - To delete all pods
